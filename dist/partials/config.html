@@ -1,0 +1,35 @@
+<datasource-http-settings current="ctrl.current" suggest-url="http://localhost:4242"></datasource-http-settings>
+
+<h5>OpenTSDB settings</h5>
+<div class="gf-form">
+  <span class="gf-form-label width-10">
+    Version
+  </span>
+  <span class="gf-form-select-wrapper">
+    <select class="gf-form-input gf-size-auto" ng-model="ctrl.current.jsonData.tsdbVersion" ng-options="v.value as v.name for v in ctrl.tsdbVersions"></select>
+  </span>
+</div>
+<div class="gf-form">
+  <span class="gf-form-label width-10">
+    Resolution
+  </span>
+  <span class="gf-form-select-wrapper">
+    <select class="gf-form-input gf-size-auto" ng-model="ctrl.current.jsonData.tsdbResolution" ng-options="v.value as v.name for v in ctrl.tsdbResolutions"></select>
+  </span>
+</div>
+<div class="gf-form">
+  <span class="gf-form-label width-10">
+    Round Nearest Millis
+  </span>
+  <span class="gf-form-input-wrapper">
+    <input type="text" class="gf-form-input" ng-model="ctrl.current.jsonData.roundNearestMillis"></input>
+  </span>
+</div>
+<div class="gf-form">
+  <span class="gf-form-label width-10">
+    Disable Cache
+  </span>
+  <span class="gf-form-checkbox-wrapper">
+    <input type="checkbox" class="gf-form-checkbox" ng-model="ctrl.current.jsonData.disableCache"></input>
+  </span>
+</div>

@@ -1,0 +1,22 @@
+{
+  "type": "datasource",
+  "name": "Cache-friendly OpenTSDB-datasource",
+  "id": "cheelio-cachefriendlyopentsdb-datasource",
+  "metrics": true,
+  "defaultMatchFormat": "pipe",
+  "annotations": true,
+  "alerting": true,
+  "tables": false,
+
+  "info": {
+    "description": "Cache-friendly OpenTSDB datasource",
+    "logos": {
+      "small": "img/opentsdb_logo.png",
+      "large": "img/opentsdb_logo.png"
+    },
+    "author": {
+      "name": "Grafana Project",
+      "url": "https://grafana.com"
+    }
+  }
+}
